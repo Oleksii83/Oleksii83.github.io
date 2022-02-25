@@ -1,79 +1,13 @@
 @charset "UTF-8";
 
-body {
-  min-width: 320px;
-  font-size: 14px;
-  font-family: Roboto;
-  color: #202020;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-@font-face {
-  font-family: "Montserrat-VariableFont_wght";
-  font-display: swap;
-  src: url("../fonts/Montserrat-VariableFont_wght.woff") format("woff"), url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat-VariableFont_wght";
-  font-display: swap;
-  src: url("../fonts/Montserrat-Italic-VariableFont_wght.woff") format("woff"), url("../fonts/Montserrat-Italic-VariableFont_wght.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans-VariableFont_wdth,wght";
-  font-display: swap;
-  src: url("../fonts/OpenSans-VariableFont_wdth,wght.woff") format("woff"), url("../fonts/OpenSans-VariableFont_wdth,wght.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans-VariableFont_wdth,wght";
-  font-display: swap;
-  src: url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff") format("woff"), url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@import "../../node_modules/swiper/swiper-bundle.css";
 
 :root {
   --bs-blue: #0d6efd;
@@ -7243,6 +7177,74 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: Roboto;
+  color: #202020;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Montserrat-VariableFont_wght";
+  font-display: swap;
+  src: url("../fonts/Montserrat-VariableFont_wght.woff") format("woff"), url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-VariableFont_wght";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.woff") format("woff"), url("../fonts/Montserrat-Italic-VariableFont_wght.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-VariableFont_wdth,wght";
+  font-display: swap;
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.woff") format("woff"), url("../fonts/OpenSans-VariableFont_wdth,wght.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-VariableFont_wdth,wght";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff") format("woff"), url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 header {
   background-color: #fff;
 }
@@ -7617,13 +7619,9 @@ body {
   height: 20px;
 }
 
-/* Hide default HTML checkbox */
-
 .switch input {
   display: none;
 }
-
-/* The slider */
 
 .slider {
   position: absolute;
@@ -7665,8 +7663,6 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
-/* Rounded sliders */
 
 .slider.round {
   border-radius: 9px;
@@ -7846,9 +7842,179 @@ input:checked + .slider:before {
 }
 
 .caroussel-section {
-  width: 600px;
-  height: 300px;
-  margin-bottom: 455px;
+  margin-bottom: 116px;
+}
+
+.carousel-title {
+  margin-bottom: 45px;
+}
+
+.carousel-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 55px;
+  padding-right: 43px;
+  height: 270px;
+  border: 1px solid #eeeeee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.img-text-container {
+  padding-left: 65px;
+  padding-top: 44px;
+}
+
+.img-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #808080;
+}
+
+.image-slider-chewbacca {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: url(../img/Chewbacca.jpg);
+}
+
+.image-slider-vader {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: url(../img/VaderBig.jpg);
+}
+
+.image-slider-yoda {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: url(../img/YodaBig.jpg);
+}
+
+.image-slider-r2d2 {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: url(../img/r2d2Big.jpg);
+}
+
+.carousel-control-prev {
+  position: relative;
+}
+
+.carousel-control-next {
+  position: relative;
+}
+
+.btn-arrow-left {
+  width: 42px;
+  height: 42px;
+  margin-right: 18px;
+  background-color: #ffffff;
+  border: 1px solid #dadada;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn-arrow-left:hover,
+.btn-arrow-left:focus {
+  border: 1px solid #0049af;
+  fill: #0049af;
+}
+
+.btn-arrow-right {
+  width: 42px;
+  height: 42px;
+  margin-left: 18px;
+  color: #5d5d5d;
+  fill: #5d5d5d;
+  background-color: #ffffff;
+  border: 1px solid #dadada;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn-arrow-right:hover,
+.btn-arrow-right:focus {
+  border: 1px solid #0049af;
+  fill: #0049af;
+}
+
+.arrow-right-svg:hover {
+  fill: #0049af;
+}
+
+.arrow {
+  fill: #0049af;
+}
+
+.mini-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mini-icon-Chubaka {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: url(../img/ChewbaccaMini.jpg);
+}
+
+.mini-icon-shreder {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: url(../img/shreder.jpg);
+}
+
+.mini-icon-yodo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: url(../img/Yoda.jpg);
+}
+
+.mini-icon-r2d2 {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: url(../img/r2d2.jpg);
+}
+
+.carousel-indicators [data-bs-target] {
+  margin-right: 60px;
+}
+
+.carousel-indicators {
+  position: relative;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 footer {
@@ -7872,11 +8038,34 @@ a:focus {
   text-decoration: none;
 }
 
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+}
+
+.footer-item {
+  width: 194px;
+  margin-right: 96px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 40px;
+  color: #303030;
+}
+
+.footer-text:hover,
+.footer-text:focus {
+  font-weight: 700;
+  color: #303030;
 }
 
 @media (min-width: 576px) {
@@ -14039,6 +14228,14 @@ a:focus {
 .carousel-control-next-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")}
 .custom-checkboxActive + label::before{background-image:url("../img/flagCheckbox.svg")}
 .custom-checkbox:checked + label::before{background-image:url("../img/flagCheckbox.svg")}
+.image-slider-chewbacca{background:url(../img/Chewbacca.webp)}
+.image-slider-vader{background:url(../img/VaderBig.webp)}
+.image-slider-yoda{background:url(../img/YodaBig.webp)}
+.image-slider-r2d2{background:url(../img/r2d2Big.webp)}
+.mini-icon-Chubaka{background:url(../img/ChewbaccaMini.webp)}
+.mini-icon-shreder{background:url(../img/shreder.webp)}
+.mini-icon-yodo{background:url(../img/Yoda.webp)}
+.mini-icon-r2d2{background:url(../img/r2d2.webp)}
 }
 
  @media (min-width: 576px){
