@@ -7348,6 +7348,7 @@ header {
 
 .navBtn {
   background: #f4f5f7;
+  height: 35px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -8013,7 +8014,7 @@ input:checked + .slider:before {
   height: 63px;
   border-radius: 50%;
   background: url(../img/ChewbaccaMini.jpg);
-  bbackground-size: cover;
+  background-size: cover;
 }
 
 .mini-icon-shreder {
